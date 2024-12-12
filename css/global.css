@@ -54,6 +54,21 @@ html {
   --femtefarve: #696969;
   --sjettefarve: #333333;
   overflow-x: hidden;
+  text-wrap: pretty;
+  scroll-behavior: smooth;
+}
+
+a.cta {
+  color: var(--secondary);
+  background-color: var(--tertiary);
+  padding: 2%;
+  width: fit-content;
+  transition: 0.15s linear;
+}
+
+a.cta:hover {
+  background-color: var(--secondary);
+  color: var(--tertiary);
 }
 
 header,
@@ -194,7 +209,7 @@ ul.menu {
   /*Sætter menuen 100% over til højre
   når den ikke er i brug (Skjuler den)*/
   margin-top: 25vh;
-  
+
   width: auto;
   transition: right 0.5s ease;
   background-color: white;
@@ -203,16 +218,9 @@ ul.menu {
   border-style: solid;
   border-width: 1px;
   border-color: var(--sjettefarve);
-  
 }
 ul.menu > li {
-<<<<<<< HEAD
-margin: 2%;
-margin-top: 20%;
-font-size: 120%;
-=======
   margin: 2%;
->>>>>>> 6f1ea5220bb8f9bb0aa6a3698b5c8a7c3257240a
 }
 
 .burger {
