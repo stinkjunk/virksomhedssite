@@ -10,6 +10,42 @@
   font-style: italic;
 }
 
+.inria-serif-light {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inria-serif-regular {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inria-serif-bold {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inria-serif-light-italic {
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inria-serif-regular-italic {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inria-serif-bold-italic {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
 html {
   --primary: white;
   --secondary: #cbbc9f;
@@ -17,6 +53,11 @@ html {
   --fjerdefarve: #818c30;
   --femtefarve: #696969;
   --sjettefarve: #333333;
+}
+
+h3{
+    font-family: "Inria Serif", serif;
+    color: var(--tertiary);
 }
 
 header,
