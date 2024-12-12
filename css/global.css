@@ -1,0 +1,36 @@
+html {
+  --primary: white;
+  --secondary: #cbbc9f;
+  --tertiary: #624f41;
+  --fjerdefarve: #818c30;
+  --femtefarve: #696969;
+  --sjettefarve: #333333;
+}
+
+header,
+footer{
+    background-color: var(--secondary);
+
+}
+
+h1{
+    color: var(--tertiary);
+}
+h2{
+    color: var(--secondary);
+}
+
+p,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: var(--sjettefarve);
+}
+
+header p,
+header a,
+footer a,
+footer p{
+    color: var(--tertiary);
+}
+
