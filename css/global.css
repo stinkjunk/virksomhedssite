@@ -76,8 +76,8 @@ img {
 }
 
 /**/
-header img{
-    display: flex;
+header img {
+  display: flex;
 }
 
 main {
@@ -110,8 +110,6 @@ li {
   list-style: none;
 }
 
-
-
 header p,
 header a,
 footer a,
@@ -130,6 +128,22 @@ footer {
   align-items: center; /* Justerer ikonerne vertikalt */
   gap: 10px; /* Tilføjer mellemrum mellem ikonerne */
   margin-top: 10px;
+}
+
+.icons img {
+  width: 30px; /* Ens størrelse til begge billeder */
+  height: 30px; /* Fast højde for at undgå uens højder */
+  object-fit: contain; /* Sikrer, at billederne bevarer deres proportioner */
+}
+
+.instagram,
+.facebook {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.space {
+  padding-bottom: 25px;
+  opacity: 0.5;
 }
 
 header {
@@ -186,7 +200,7 @@ ul.menu {
   padding: 2%;
 }
 ul.menu > li {
-margin: 2%;
+  margin: 2%;
 }
 .burger {
   width: 30px;
