@@ -76,8 +76,8 @@ img {
 }
 
 /**/
-header img{
-    display: flex;
+header img {
+  display: flex;
 }
 
 main {
@@ -110,8 +110,6 @@ li {
   list-style: none;
 }
 
-
-
 header p,
 header a,
 footer a,
@@ -130,6 +128,22 @@ footer {
   align-items: center; /* Justerer ikonerne vertikalt */
   gap: 10px; /* Tilføjer mellemrum mellem ikonerne */
   margin-top: 10px;
+}
+
+.icons img {
+  width: 30px; /* Ens størrelse til begge billeder */
+  height: 30px; /* Fast højde for at undgå uens højder */
+  object-fit: contain; /* Sikrer, at billederne bevarer deres proportioner */
+}
+
+.instagram,
+.facebook {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.space {
+  padding-bottom: 25px;
+  opacity: 0.5;
 }
 
 header {
@@ -192,9 +206,13 @@ ul.menu {
   
 }
 ul.menu > li {
+<<<<<<< HEAD
 margin: 2%;
 margin-top: 20%;
 font-size: 120%;
+=======
+  margin: 2%;
+>>>>>>> 6f1ea5220bb8f9bb0aa6a3698b5c8a7c3257240a
 }
 
 .burger {
