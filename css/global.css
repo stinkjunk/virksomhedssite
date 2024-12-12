@@ -75,6 +75,11 @@ img {
   padding: 0;
 }
 
+/**/
+header img{
+    display: flex;
+}
+
 main {
   padding: 1%;
   margin: 0;
@@ -92,7 +97,7 @@ h3 {
   color: var(--tertiary);
   font-weight: 500;
   font-size: 15px;
-  margin-bottom: 2px;
+  margin: 0;
   line-height: 1.4;
 }
 
