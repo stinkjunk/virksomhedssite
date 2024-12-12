@@ -167,27 +167,36 @@ a#logo > img {
 }
 
 nav.active .menu {
-  right: 0;
+  right: -1%;
   /*Viser menuen frem når den er aktiv.*/
 }
 ul.menu {
   position: absolute;
   line-height: 140%;
-  max-height: 80vh;
+
   overflow-y: auto;
   scrollbar-width: none;
   right: -100%;
   /*Sætter menuen 100% over til højre
   når den ikke er i brug (Skjuler den)*/
-  margin-top: 50px;
+  margin-top: 25vh;
+  
   width: auto;
   transition: right 0.5s ease;
   background-color: white;
   padding: 2%;
+  border-radius: 10px 0 0 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--sjettefarve);
+  
 }
 ul.menu > li {
 margin: 2%;
+margin-top: 20%;
+font-size: 120%;
 }
+
 .burger {
   width: 30px;
   height: 20px;
