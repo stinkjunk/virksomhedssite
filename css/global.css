@@ -23,17 +23,24 @@ header,
 footer {
   background-color: var(--secondary);
   margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0;
+}
+
+main {
   padding: 1%;
-}
-
-body{
-    padding: 0;
-    margin: 0;
-}
-
-main{
-    padding: 1%;
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
@@ -56,4 +63,9 @@ header a,
 footer a,
 footer p {
   color: var(--tertiary);
+}
+
+/* Menu og footer */
+footer {
+  text-align: center;
 }
