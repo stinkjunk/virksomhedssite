@@ -53,6 +53,7 @@ html {
   --fjerdefarve: #818c30;
   --femtefarve: #696969;
   --sjettefarve: #333333;
+  overflow: hidden;
 }
 
 header,
@@ -96,11 +97,15 @@ h3 {
 }
 
 p,
-a {
+a,
+li {
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: var(--sjettefarve);
+  list-style: none;
 }
+
+
 
 header p,
 header a,
@@ -122,9 +127,71 @@ footer {
   margin-top: 10px;
 }
 
-.icons img {
-  width: 30px; /* Ens størrelse til begge billeder */
-  height: 30px; /* Fast højde for at undgå uens højder */
-  object-fit: contain; /* Sikrer, at billederne bevarer deres proportioner */
-  margin-bottom: 25px;
+header {
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-right: 3%;
+}
+
+a#logo > img {
+  aspect-ratio: 1 / 1;
+  height: 60px;
+}
+
+.burger {
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+}
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: 0.2s linear;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.2s linear;
+}
+
+nav.active .menu {
+  right: 0;
+  /*Viser menuen frem når den er aktiv.*/
+}
+ul.menu {
+  position: absolute;
+  line-height: 140%;
+  max-height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  right: -100%;
+  /*Sætter menuen 100% over til højre
+  når den ikke er i brug (Skjuler den)*/
+  margin-top: 50px;
+  width: auto;
+  transition: right 0.5s ease;
+  background-color: white;
+  padding: 2%;
+}
+ul.menu > li {
+margin: 2%;
+}
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--tertiary);
+  margin-bottom: 5px;
+  transition: 0.5s linear;
 }
