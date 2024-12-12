@@ -126,5 +126,8 @@ footer {
   width: 30px; /* Ens størrelse til begge billeder */
   height: 30px; /* Fast højde for at undgå uens højder */
   object-fit: contain; /* Sikrer, at billederne bevarer deres proportioner */
-  margin-bottom: 25px;
+}
+
+.space {
+  padding-bottom: 25px;
 }
