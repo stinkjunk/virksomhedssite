@@ -1,3 +1,15 @@
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 html {
   --primary: white;
   --secondary: #cbbc9f;
@@ -8,16 +20,28 @@ html {
 }
 
 header,
-footer{
-    background-color: var(--secondary);
-
+footer {
+  background-color: var(--secondary);
+  margin: 0;
+  padding: 1%;
 }
 
-h1{
-    color: var(--tertiary);
+body{
+    padding: 0;
+    margin: 0;
 }
-h2{
-    color: var(--secondary);
+
+main{
+    padding: 1%;
+    margin: 0;
+}
+
+h1 {
+  color: var(--tertiary);
+  font-family: "Instrument Serif", serif;
+}
+h2 {
+  color: var(--secondary);
 }
 
 p,
@@ -30,7 +54,6 @@ a {
 header p,
 header a,
 footer a,
-footer p{
-    color: var(--tertiary);
+footer p {
+  color: var(--tertiary);
 }
-
