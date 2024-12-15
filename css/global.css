@@ -235,3 +235,54 @@ ul.menu > li {
   margin-bottom: 5px;
   transition: 0.5s linear;
 }
+
+@media screen and (min-width: 800px) {
+
+  nav.active .menu {
+    right: 0;
+    /*Viser menuen frem når den er aktiv.*/
+  }
+  header > nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: right;
+    align-items: center;
+  }
+  ul.menu {
+    flex-grow: 1;
+    justify-content: space-between;
+    position: relative;
+    line-height: 140%;
+    right: 0;
+    display: flex;
+    margin: 5%;
+    transition: right 0.5s ease;
+    background-color: transparent;
+    padding: 0;
+    border-style: none;
+    
+  }
+  ul.menu li > a{
+    font-size: 120%;
+    transition: 0.15s ease-in-out;
+  }
+  ul.menu li > a:hover{
+    font-size: 130%;
+    text-decoration: underline;
+  }
+  a#logo{
+    transition: 0.15s ease-in-out;
+  }
+  a#logo:hover{
+    transform: scale(110%);
+  }
+  li.burgerwarning,
+  .burger{
+    display: none;
+  } 
+  header{
+    height: 10vh;
+  }
+
+
+}
