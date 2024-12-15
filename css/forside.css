@@ -42,12 +42,7 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 2%;
 }
-/*Denne block er her kun så <img> elementerne kan ses før billederne er sat ind*/
-.grid-1 > img {
-  border-style: inset;
-  border-width: 1px;
-}
-/*Slet mig, når billederne er linket*/
+
 
 .grid-1-p1 {
   grid-column: span 2;
@@ -126,7 +121,7 @@ h1 {
   .img1,
   .img2, 
   .img3 {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 3 / 2;
     width: 100%;
     grid-row: 2;
     grid-column: span 2;

@@ -135,6 +135,7 @@ footer p {
 /* Menu og footer */
 footer {
   text-align: center;
+  margin-top: 10%;
 }
 
 .icons {
@@ -212,7 +213,7 @@ ul.menu {
 
   width: auto;
   transition: right 0.5s ease;
-  background-color: white;
+  background-color: var(--primary);
   padding: 2%;
   border-radius: 10px 0 0 10px;
   border-style: solid;
@@ -235,6 +236,20 @@ ul.menu > li {
   margin-bottom: 5px;
   transition: 0.5s linear;
 }
+/*Denne block er her kun så <img> elementerne kan ses før billederne er sat ind*/
+img.noimg {
+  border-style: inset;
+  border-width: 1px;
+}
+/*Slet mig .noimg fra <img> når billederne er linket*/
+
+.splitter{
+  height: 2px;
+  width: 100%;
+  background-color: var(--femtefarve);
+  opacity: 50%;
+}
+
 
 @media screen and (min-width: 800px) {
 
@@ -260,6 +275,7 @@ ul.menu > li {
     background-color: transparent;
     padding: 0;
     border-style: none;
+    z-index: 2;
     
   }
   ul.menu li > a{
