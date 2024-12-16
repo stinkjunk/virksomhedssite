@@ -97,12 +97,14 @@ header img {
 
 main {
   padding: 1%;
-  margin: 2%;
+  margin: 2% auto;
+  max-width: 70%;
 }
 
 h1 {
   color: var(--tertiary);
   font-family: "Instrument Serif", serif;
+  font-weight: 200;
 }
 h2 {
   color: var(--secondary);
@@ -243,21 +245,19 @@ img.noimg {
 }
 /*Slet mig .noimg fra <img> når billederne er linket*/
 
-.splitter{
+.splitter {
   height: 2px;
   width: 100%;
   background-color: var(--femtefarve);
   opacity: 50%;
 }
 
-
 @media screen and (min-width: 800px) {
-
   nav.active .menu {
     right: 0;
     /*Viser menuen frem når den er aktiv.*/
   }
-  header > nav{
+  header > nav {
     display: flex;
     flex-grow: 1;
     justify-content: right;
@@ -276,29 +276,26 @@ img.noimg {
     padding: 0;
     border-style: none;
     z-index: 2;
-    
   }
-  ul.menu li > a{
+  ul.menu li > a {
     font-size: 120%;
     transition: 0.15s ease-in-out;
   }
-  ul.menu li > a:hover{
+  ul.menu li > a:hover {
     font-size: 130%;
     text-decoration: underline;
   }
-  a#logo{
+  a#logo {
     transition: 0.15s ease-in-out;
   }
-  a#logo:hover{
+  a#logo:hover {
     transform: scale(110%);
   }
   li.burgerwarning,
-  .burger{
+  .burger {
     display: none;
-  } 
-  header{
+  }
+  header {
     height: 10vh;
   }
-
-
 }

@@ -1,4 +1,4 @@
-section.hero {
+section .hero {
   aspect-ratio: 5/4;
   width: 100%;
   background-image: url(../imgs/Café\ Bjerget.webp);
@@ -31,6 +31,7 @@ p.herotitle {
 .herobox > p,
 .herobox > a {
   text-align: center;
+  max-width: 40ch;
 }
 
 h1 {
@@ -42,7 +43,6 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 2%;
 }
-
 
 .grid-1-p1 {
   grid-column: span 2;
@@ -119,14 +119,14 @@ h1 {
     grid-column: span 3;
   }
   .img1,
-  .img2, 
+  .img2,
   .img3 {
     aspect-ratio: 3 / 2;
     width: 100%;
     grid-row: 2;
     grid-column: span 2;
   }
-  .flex-1{
+  .flex-1 {
     flex-direction: row;
     justify-content: space-evenly;
   }
