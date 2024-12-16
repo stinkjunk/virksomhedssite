@@ -13,37 +13,56 @@ h1 {
   margin: 2%;
 }
 
-.grid_1-1 {
+.grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6px;
   margin: 2%;
 }
-.grid_1-1 img {
+
+.grid_1-1-1 img {
   height: 100%;
   width: 100%;
+}
+
+h2 {
+  color: var(--femtefarve);
+  max-width: 94%;
+  margin: 0 auto;
+  margin-top: 4%;
 }
 
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 5rem;
   }
-  .grid_1-1 {
+  .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .grid_1-1 :first-child {
+  .grid_1-1-1 :first-child {
     grid-column: 1;
     grid-row: 1 / span 2;
     object-fit: cover;
     aspect-ratio: 10/10;
   }
-  .grid_1-1 :last-child {
+  .grid_1-1-1 :last-child {
     grid-column: 2 / span 3;
     grid-row: 1;
     object-fit: cover;
     max-height: 200px;
     object-position: center 60%;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin: 2%;
+  }
+
+  .grid_1-1 p {
+    margin: 0;
   }
 }
