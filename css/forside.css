@@ -10,8 +10,6 @@ img.heroimg {
   display: none;
 }
 
-
-
 .herobox {
   margin: 5%;
   background-color: rgba(255, 255, 255, 0.767);
@@ -50,7 +48,6 @@ h1 {
   gap: 2%;
 }
 
-
 .grid-1-p1 {
   grid-column: span 2;
 }
@@ -82,16 +79,14 @@ h1 {
   align-items: center;
   gap: 5%;
 }
-.mapcontainer{
-    flex-grow: 1;
-    margin-bottom: 10%;
-    
+.mapcontainer {
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
-iframe#gmap_canvas{
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-    
+iframe#gmap_canvas {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 .flex-1 div p,
 .flex-1 div h2 {
@@ -142,15 +137,21 @@ iframe#gmap_canvas{
     grid-column: span 3;
   }
 
+  .mapcontainer {
+    aspect-ratio: auto;
+    flex-grow: 1;
+    margin-bottom: 10%;
+  }
+
   .img1,
-  .img2, 
+  .img2,
   .img3 {
     aspect-ratio: 3 / 2;
     width: 100%;
     grid-row: 2;
     grid-column: span 2;
   }
-  .flex-1{
+  .flex-1 {
     flex-direction: row;
     justify-content: space-evenly;
   }
