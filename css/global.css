@@ -259,6 +259,7 @@ ul.menu > li{
   flex-grow: 1;
   text-align: right;
   padding-right: 5vw;
+  font-size: 120%;
 }
 
 
