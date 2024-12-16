@@ -77,8 +77,6 @@ a.cta:hover {
   color: var(--tertiary);
 }
 
-
-
 header,
 footer {
   background-color: var(--secondary);
@@ -134,7 +132,6 @@ li {
   text-decoration: none;
   color: var(--sjettefarve);
   list-style: none;
-  font-size: 120%;
 }
 
 header p,
