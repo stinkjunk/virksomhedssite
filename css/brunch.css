@@ -11,11 +11,10 @@ main h2 {
 
 .grid-3 > img {
   width: 100%;
-  aspect-ratio: 1 / 1;
 }
 
 main h2,
-main p  {
+main p {
   text-align: center;
 }
 
@@ -53,7 +52,7 @@ h1 {
     align-items: center;
   }
   .grid-1 h2,
-  .grid-1 p{
+  .grid-1 p {
     text-align: left;
   }
   .grid-1 > img {
@@ -81,9 +80,5 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-  }
-
-  .grid-3 > img {
-    aspect-ratio: 2 / 1;
   }
 }
