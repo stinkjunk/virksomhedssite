@@ -12,8 +12,7 @@ img.heroimg {
 
 .herobox {
   margin: 5%;
-  background-color: rgba(255, 255, 255, 0.767);
-  padding: 5%;
+  background-color: #f3f1ec;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -84,6 +83,7 @@ h1 {
   img.heroimg {
     display: block;
     height: 100%;
+    width: auto;
     overflow: hidden;
   }
   section.hero {
@@ -93,7 +93,7 @@ h1 {
     aspect-ratio: 5 / 2;
   }
   .herobox {
-    background-color: var(--primary);
+    background-color: #f3f1ec;
     margin: 0;
     height: 100%;
     gap: 0;
