@@ -110,7 +110,7 @@ iframe#gmap_canvas {
     aspect-ratio: 5 / 2;
   }
   .herobox {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     margin: 0;
     height: 100%;
     gap: 0;
