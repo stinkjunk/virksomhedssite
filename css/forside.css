@@ -97,7 +97,6 @@ iframe#gmap_canvas {
   img.heroimg {
     display: block;
     height: 100%;
-    overflow: hidden;
   }
   section.hero {
     display: grid;
