@@ -154,4 +154,12 @@ iframe#gmap_canvas {
   .img3 {
     display: none;
   }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 0px;
+  }
+  #aabning {
+    margin: 50px;
+  }
 }
