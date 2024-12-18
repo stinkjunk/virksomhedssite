@@ -1,7 +1,7 @@
 section.hero {
   aspect-ratio: 5/4;
   width: 100%;
-  background-image: url(../imgs/Café\ Bjerget.webp);
+  background-image: url(../imgs/forsidecafebjerget.webp);
   background-size: cover;
   display: flex;
 }
@@ -73,6 +73,7 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 5%;
+  margin-top: 5%;
 }
 .mapcontainer {
   width: 100%;
@@ -96,7 +97,6 @@ iframe#gmap_canvas {
   img.heroimg {
     display: block;
     height: 100%;
-    overflow: hidden;
   }
   section.hero {
     display: grid;
@@ -153,5 +153,13 @@ iframe#gmap_canvas {
 @media screen and (max-width: 800px) {
   .img3 {
     display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 0px;
+  }
+  #aabning {
+    margin: 50px;
   }
 }
